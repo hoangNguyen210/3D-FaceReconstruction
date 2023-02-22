@@ -19,8 +19,8 @@ We provide the pretrained models for **SSL** methods, as listed below:
 
 | model  | data percentage | pretrained weights |
 | :---: | :---: |  :---: |
-| SSL-20 | 20  | [GoogleDrive](https://drive.google.com/file/d/1I08oJlXNtDe8jJPxHkroxUi7lYX2lhVc/view?usp=sharing) / [TsinghuaCloud](https://cloud.tsinghua.edu.cn/f/1367349deefc48efa650/) |
-| SSL-100 | 100 | [GoogleDrive](https://drive.google.com/file/d/1UUmQqQYY5OInVuXvUgO41Gice93vJ0A7/view?usp=sharing) / [TsinghuaCloud](https://cloud.tsinghua.edu.cn/f/f04b18081e3e4606adb7/) |
+| SSL-20 | 20  | [GoogleDrive](https://drive.google.com/file/d/1vDS0cMgE8C0Y9PngibsY_kak6OLhy0Y1/view?usp=sharing)|
+| SSL-100 | 100 | [GoogleDrive](https://drive.google.com/file/d/1mcGT0Mfp0524bJQpOglEuVq9IYFm-yNE/view?usp=sharing)|
 
 
 To train **SSL**, run the following command:
@@ -29,6 +29,17 @@ python -u  ssl_mica.py
 ```
 
 ## Evaluate Downstream tasks 
+
+We provide the pretrained models for **Downstream task** methods, as listed below: 
+
+| model  |  pretrained weights |
+| :---: |  :---: |
+| BASE-MICA |  [GoogleDrive](https://drive.google.com/file/d/1l403-4DZzYqdpENjrt3YFCXGnhUC-Jm8/view?usp=sharing)|
+| SSL-20 |  [GoogleDrive](https://drive.google.com/file/d/1Anw4bZlS9Qk5k_Va2FnYgSMpDsVfUE2S/view?usp=sharing)|
+| SSL-100 | [GoogleDrive](https://drive.google.com/file/d/1NHJlNVTRzUL8rWMhvTs6qgECaT6gKHOY/view?usp=sharing)|
+
+
+
 To train downstream task without SSL, run the following command: 
 ```
 python -u  downstream_mica.py
