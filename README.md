@@ -14,16 +14,29 @@ $ pip install requirements.txt
 
 
 ## Evaluate Self-supervised model's weights 
+
+We provide the pretrained models for **SSL** methods, as listed below: 
+
+| model  | data percentage | pretrained weights |
+| :---: | :---: |  :---: |
+| SSL-20 | 20  | [GoogleDrive](https://drive.google.com/file/d/1I08oJlXNtDe8jJPxHkroxUi7lYX2lhVc/view?usp=sharing) / [TsinghuaCloud](https://cloud.tsinghua.edu.cn/f/1367349deefc48efa650/) |
+| SSL-100 | 100 | [GoogleDrive](https://drive.google.com/file/d/1UUmQqQYY5OInVuXvUgO41Gice93vJ0A7/view?usp=sharing) / [TsinghuaCloud](https://cloud.tsinghua.edu.cn/f/f04b18081e3e4606adb7/) |
+
+
+To train **SSL**, run the following command:
 ```
-python -m torch.distributed.launch --nproc_per_node=1 mask_deepcluster_universal.py
+python -u  ssl_mica.py
 ```
 
 ## Evaluate Downstream tasks 
-To train **SSL3D** model, run the following command: 
+To train downstream task without SSL, run the following command: 
 ```
-python -m torch.distributed.launch --nproc_per_node=1 mask_deepcluster_universal.py
+python -u  downstream_mica.py
+```
 
-python -m torch.distributed.launch --nproc_per_node=1 mask_deepcluster_usst.py
+To train downstream task with SSL, run the following command: 
+```
+python -u  downstream_ssl_mica.py
 ```
 
 Example output during training :
